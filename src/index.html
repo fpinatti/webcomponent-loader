@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <title>Threed Gltf Loader</title>
+  <style>
+    .comp1 {
+      height: 50vh;
+      background-color: coral;
+    }
+    .comp2 {
+      height: 50vh;
+      background-color: darkseagreen;
+    }
+  </style>
+  <script type="module" src="/build/threed-loader.esm.js"></script>
+  <script nomodule src="/build/threed-loader.js"></script>
+
+</head>
+<body>
+
+  <threed-loader
+      class="comp1"
+      scene="build/assets/duck.gltf"
+      parent=".comp1">
+  </threed-loader>
+  <threed-loader
+      class="comp2"
+      scene="build/assets/DamagedHelmet.gltf"
+      parent=".comp2">
+  </threed-loader>
+
+</body>
+</html>
